@@ -15,12 +15,12 @@
 ### Step 2: Cone the repository and build the program either with g++ or cmake and run the output :
   $ git clone https://github.com/Saad-Naseer/machine-learning-tools.git
   ##### Build with g++ :
-  $ cd <Linear Regression directory path>\
+  $ cd <Linear_Regression_directory_path>\
   $ cd src/\
   $ g++ l_regression.cpp -std=c++11 -I/usr/local/include/python2.7   -I/usr/local/lib/python2.7/site-packages/numpy/core/include -lpython2.7\
   $ ./a.out\
   ##### Build with cmake
-  $ cd <Linear Regression directory path>\
+  $ cd <Linear_Regression_directory_path>\
   $ mkdir build\
   $ cd build/\
   $ cmake ..\
