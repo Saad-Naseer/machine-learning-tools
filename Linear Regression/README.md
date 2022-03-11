@@ -10,5 +10,12 @@
    $ ./configure\
    $ make\
    $ sudo make install\
- #### Step 1.2 To install matplotlib, numpy and python2.7:
+ #### Step 1.3 To install matplotlib, numpy and python2.7:
   $ sudo apt-get install python-matplotlib python-numpy python2.7-dev
+### Step 2: Cone the repository and build the program either with g++ or cmake and run the output :
+  $ git clone 
+  ##### Build with g++ :
+  $ g++ l_regression.cpp -std=c++11 -I/usr/local/include/python2.7   -I/usr/local/lib/python2.7/site-packages/numpy/core/include -lpython2.7
+  ##### Build with cmake
+  $ 
+
