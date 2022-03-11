@@ -11,5 +11,5 @@
    $ make\
    $ sudo make install\
  #### Step 1.2 To install numpy:
-  $ sudo apt install python3-pip
-  $ pip3 install numpy
+  $ sudo apt install python-pip\
+  $ pip install numpy
