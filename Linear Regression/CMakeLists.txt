@@ -11,8 +11,8 @@ endif()
 find_package (Eigen3 3.3 REQUIRED NO_MODULE)
 
 # find python libraries
-find_package(Python3 COMPONENTS Interpreter Development NumPy REQUIRED)
-find_package(PythonLibs 3.0 REQUIRED)
+find_package(Python COMPONENTS Interpreter Development NumPy REQUIRED)
+find_package(PythonLibs 2.0 REQUIRED)
 include_directories(${PYTHON3_INCLUDE_DIRS} ${NumPy_INCLUDE_DIRS})
 
 # populate matplotlib repository
@@ -29,14 +29,14 @@ endif()
 include_directories(SYSTEM ${matplotlib_SOURCE_DIR})
 
 # add executable
-add_executable(least_square src/least_square.cpp)
+add_executable(least_square src/l_regression.cpp)
 #add_executable(copy src/least_square.cpp)
 
 # link python and numpy
 target_link_libraries(least_square
     PRIVATE
         ${PYTHON_LIBRARIES}
-        Python3::NumPy
+        Python::NumPy
         Eigen3::Eigen
 )
 
