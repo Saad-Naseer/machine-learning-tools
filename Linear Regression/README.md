@@ -5,7 +5,7 @@
  #### Step 1.2 To upgrade your cmake (minimum required 3.15):
   $ sudo apt remove cmake
   $ sudo apt-get install libssl-dev
-  #### Download tar file from https://cmake.org/download/. Extract the downloaded tar file and then:
+  ##### Download tar file from https://cmake.org/download/. Extract the downloaded tar file and then:
    $ cd $CMAKE_DOWNLOAD_PATH
    $ ./configure
    $ make
