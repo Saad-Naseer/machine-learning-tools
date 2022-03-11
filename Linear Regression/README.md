@@ -7,9 +7,9 @@
   $ sudo apt-get install libssl-dev
   ##### Download tar file from https://cmake.org/download/. Extract the downloaded tar file and then:
    $ cd $CMAKE_DOWNLOAD_PATH\
-   $ ./configure
-   $ make
-   $ sudo make install
+   $ ./configure\
+   $ make\
+   $ sudo make install\
  #### Step 1.2 To install numpy:
   $ sudo apt install python3-pip
   $ pip3 install numpy
