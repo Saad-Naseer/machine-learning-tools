@@ -10,6 +10,5 @@
    $ ./configure\
    $ make\
    $ sudo make install\
- #### Step 1.2 To install numpy:
-  $ sudo apt install python-pip\
-  $ pip install numpy
+ #### Step 1.2 To install matplotlib, numpy and python2.7:
+  $ sudo apt-get install python-matplotlib python-numpy python2.7-dev
