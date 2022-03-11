@@ -1,4 +1,4 @@
-## tool to perfrom linear Regression
+## Tool to perfrom linear Regression
 ### Step 1: To run this need you need to insatll some libraries :
  #### Step 1.1 : To install eigen libraries for vectors and matrices operation:
   $ sudo apt install libeigen3-dev
