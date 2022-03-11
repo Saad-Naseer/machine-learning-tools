@@ -6,7 +6,7 @@
   $ sudo apt remove cmake
   $ sudo apt-get install libssl-dev
   ##### Download tar file from https://cmake.org/download/. Extract the downloaded tar file and then:
-   $ cd $CMAKE_DOWNLOAD_PATH
+   $ cd $CMAKE_DOWNLOAD_PATH\
    $ ./configure
    $ make
    $ sudo make install
