@@ -15,27 +15,30 @@ int main(int argc, char *argv[])
         std::cout << "error not found file" << std::endl;
         return 1;
     }
+    float f_x = 0;
+    float f_y = 0;
     int i = 0;
-    data_x.conservativeResize(i + 1);
-    while (infile >> data_x[i])
+    while (infile >> f_x >> f_y) 
     {
-        // infile >> data_x[i];
 
+        data_x.conservativeResize(i + 1);
         data_y.conservativeResize(i + 1);
-        infile >> data_y[i];
+        data_x[i] = f_x;
+        data_y[i] = f_y;
         std::cout << data_x[i] << "  " << data_y[i] << std::endl;
         i++;
-        data_x.conservativeResize(i + 1);
     }
+   
     infile.close();
     // plot data
-    // plt::figure(1);
+    // plt::figure();
+    std::cout << data_x.size();
     plt::plot(data_x, data_y, "r*");
-    // plt:xlabel("x");
-    // plt:ylabel("y");
+    plt::xlabel("x");
+    plt::ylabel("y");
     // plt::show();
     // plt::plot({1,3,2,4});
-    plt::show();
+    //plt::show();
 
     // obs vector
     Eigen::VectorXf obs;
@@ -64,13 +67,13 @@ int main(int argc, char *argv[])
     Eigen::VectorXf linespace(10);
     for (int i = 0; i < linespace.size(); i++)
     {
-        linespace(i) = 20 * i;
+        linespace(i) =  1.5*i;
     }
     Eigen::VectorXf y(linespace.size());
     y = unknown[0] * linespace;
     y.array() += unknown[1];
-    // plt::plot(linespace, y);
-    // plt::show();
+     plt::plot(linespace, y);
+     plt::show();
 
     return 0;
 }
